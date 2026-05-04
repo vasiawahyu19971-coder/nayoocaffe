@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nayoo caffe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Nayoo caffe </h2>
+
+<div class="container">
+
+  <div class="card">
+    <img src="gambar cake 2.jpeg">
+    <h4>cake chocolate</h4>
+    <p>Rp 50.000</p>
+    <button onclick="tambah(50000)">Beli</button>
+  </div>
+
+  <div class="card">
+    <img src="gambar cookie.jpg">
+    <h4> cookie </h4>
+    <p>Rp 20.000</p>
+    <button onclick="tambah(20000)">Beli</button>
+  </div>
+
+  <div class="card">
+    <img src="gambar latte.jpg">
+    <h4> latte coffe</h4>
+    <p>Rp 20.000</p>
+    <button onclick="tambah(20000)">Beli</button>
+  </div>
+<div class="card">
+    <img src="gambarramen.webp">
+    <h4> Spacy Ramen</h4>
+    <p>Rp 20.000</p>
+    <button onclick="tambah(20000)">Beli</button>
+  </div>
+  <div class="card">
+    <img src="gambarmarugameudon.jpg">
+    <h4>Marugame udon</h4>
+    <p>Rp 15.000</p>
+    <button onclick="tambah(15000)">Beli</button>
+  </div>
+  <div class="card">
+    <img src="gambar donat.jpg">
+    <h4> Donat</h4>
+    <p>Rp 10.000</p>
+    <button onclick="tambah(10000)">Beli</button>
+  </div>
+<div class="card">
+    <img src="gambarmatchalatte.jpg">
+    <h4> Matcha Latte</h4>
+    <p>Rp 25.000</p>
+    <button onclick="tambah(25000)">Beli</button>
+  </div>
+  <div class="card">
+    <img src="gambar lemineral.jpg">
+    <h4>Le mineral</h4>
+    <p>Rp 5.000</p>
+    <button onclick="tambah(5000)">Beli</button>
+  </div>
+<div class="card">
+    <img src="gmbarkopi-klotok.jpg">
+    <h4>klotok kopi</h4>
+    <p>Rp 15.000</p>
+    <button onclick="tambah(15000)">Beli</button>
+  </div>
+
+<div class="total-box">
+  Total: Rp<span id="total">0</span>
+</div>
+
+<script>
+let total = 0;
+function tambah(harga) {
+  total += harga;
+  document.getElementById("total").innerText = total;
+}
+</script>
+<button onclick="checkout()"> Checkout✉️</button>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sukses </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <a href="index.html">
+  
+  </a>
+</div>
+
+
+<script>
+function checkout() {
+  // tampilkan pesan
+  alert("🎉 Terima kasih sudah order!\nPesanan sedang diproses.\nEstimasi: 15-30 menit ⏳");
+
+  // reset total
+  total = 0;
+  document.getElementById("total").innerText = total;
+}
+</script>
+<div id="popup">
+  <div class="popup-content">
+    <h2>🎉 Terima Kasih!</h2>
+    <p>Pesanan kamu sedang diproses ☕</p>
+    <p>Estimasi waktu: <b>15 - 30 menit</b> ⏳</p>
+    <button onclick="tutupPopup()">OK</button>
+  </div>
+</div>
+<script src="script.jsfna"></script>
+</body>
+</html>
+</body>
+</html>
